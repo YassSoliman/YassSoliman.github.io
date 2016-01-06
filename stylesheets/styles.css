@@ -746,7 +746,7 @@ header p {
   background: linear-gradient(#ffe788, #ffe788);
   background-color: #ffeca0;
 }
-#banner .fork1 {
+#banner .fork {
   position: fixed;
   left: 50%;
   margin-left: -325px;
@@ -757,15 +757,14 @@ header p {
   background-color: #FFE788;
 }
 #banner .fork2 {
-  position: fixed;
   left: 50%;
-  margin-left: -200px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
   font-size: 14px;
   background-color: #FFE788;
 }
+
 #banner .downloads {
   float: right;
   margin: 0 45px 0 0;
