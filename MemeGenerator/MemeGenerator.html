@@ -55,12 +55,15 @@
       ctx.fillStyle = "white";
       ctx.strokeStyle = "black";
       ctx.lineWidth = 3;
-
-      ctx.fillText(topLine, canvas.width/2, 40, canvas.width);
-      ctx.fillText(bottomLine, canvas.width/2, canvas.height - 40, canvas.width);
-
-      ctx.strokeText(topLine, canvas.width/2, 40, canvas.width);
-      ctx.strokeText(bottomLine, canvas.width/2, canvas.height - 40, canvas.width);
+      
+      if(topLine != null){
+        ctx.fillText(topLine, canvas.width/2, 40, canvas.width);
+        ctx.fillText(bottomLine, canvas.width/2, canvas.height - 40, canvas.width);
+      }
+      if(bottomLine != null){
+        ctx.strokeText(topLine, canvas.width/2, 40, canvas.width);
+        ctx.strokeText(bottomLine, canvas.width/2, canvas.height - 40, canvas.width);
+      }
     }
 
     function saveFile() {
