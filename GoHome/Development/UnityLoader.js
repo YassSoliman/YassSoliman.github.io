@@ -3430,8 +3430,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'GoHomeDev1.data';
-    var REMOTE_PACKAGE_BASE = 'GoHomeDev1.data';
+    var PACKAGE_NAME = 'GoHomeDev2.data';
+    var REMOTE_PACKAGE_BASE = 'GoHomeDev2.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -3441,7 +3441,7 @@ Module.expectedDataFileDownloads++;
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
       var REMOTE_PACKAGE_SIZE = 3239869;
-      var PACKAGE_UUID = '0e40644a-c98f-4eb4-a9b8-9a90544f310a';
+      var PACKAGE_UUID = '4cff2119-a203-46a9-84a1-242aac537ac5';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3590,10 +3590,10 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
           DataRequest.prototype.requests["/Managed/mono/2.0/machine.config"].onload();
-          Module['removeRunDependency']('datafile_GoHomeDev1.data');
+          Module['removeRunDependency']('datafile_GoHomeDev2.data');
 
     };
-    Module['addRunDependency']('datafile_GoHomeDev1.data');
+    Module['addRunDependency']('datafile_GoHomeDev2.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
