@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:600);
+.navbar {
+  border-radius: 15px !important;
+  border: 2px solid #cbcbcb;
+}
+
+.container {
+  max-width: 720px;
+}
+
+.games, .games th, .games td {
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+body {
+  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/triangular.png");
+  background-color: #D8D8D8;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#footer {
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+  text-align: justified;
+}
+
+.small-image {
+	width: 180px;
+	height: 140px;
+	margin: 0 auto;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.small-image:hover {
+	width: 220px;
+
+}
+
+.img-responsive {
+  display: inline !important;
+}
+
+h2 {
+  text-align: center;
+}
+
+#about {
+  background-color: white;
+  min-height: 290px;
+  padding: 20px 40px 40px 40px;
+}
+
+#portfolio {
+  background-color: white;
+  min-height: 290px;
+  padding: 20px 40px 40px 40px;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#contact {
+  min-height: 290px;
+  padding: 20px 40px 40px 40px;
+  background-color: #F4F4F4;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  border: 2px solid #cbcbcb;
+  background-color: white;
+}
+
+h4 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#contact-box {
+  margin-top: 10px;
+}
+
+h3{
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+.social {
+  border-style: solid;
+  
+}
+
+.well {
+  text-align: center;
+}
