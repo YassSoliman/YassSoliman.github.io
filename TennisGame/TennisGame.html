@@ -15,8 +15,8 @@
 <script>
 var canvas;
 var canvasContext;
-var ballX = 50;
-var ballY = 50;
+var ballX;
+var ballY;
 var ballSpeedX = 10;
 var ballSpeedY = 4;
 
@@ -25,6 +25,7 @@ var player2Score = 0;
 const WINNING_SCORE = 3;
 
 var showingWinScreen = false;
+var gameStart = false;
 
 var paddle1Y = 250;
 var paddle2Y = 250;
@@ -50,11 +51,16 @@ function handleMouseClick(evt) {
 		player2Score = 0;
 		showingWinScreen = false;
 	}
+	if(!gameStart) {
+		gameStart = true;
+	}
 }
 
 window.onload = function(){
 	canvas = document.getElementById('gameCanvas');
 	canvasContext = canvas.getContext('2d');
+	ballX = canvas.width/2;
+	ballY = canvas.height/2;
 	var framesPerSecond = 30;
 	setInterval(function(){
 			moveEverything();
@@ -66,7 +72,9 @@ window.onload = function(){
 	canvas.addEventListener('mousemove',
 		function(evt) {
 			var mousePos = calculateMousePos(evt);
-			paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+			if(gameStart){
+				paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+			}
 		});
 }
 
@@ -91,7 +99,7 @@ function computerMovement() {
 }
 
 function moveEverything() {
-	if(showingWinScreen){
+	if(showingWinScreen || !gameStart){
 		return;
 	}
 	computerMovement();
@@ -150,6 +158,7 @@ function drawEverything() {
 		canvasContext.fillText("Click to continue", (canvas.width/2)-25, canvas.height-180);
 		return;
 	}
+	
 	// draws the net
 	drawNet();
 	
@@ -165,6 +174,12 @@ function drawEverything() {
 	
 	canvasContext.fillText(player1Score, 100, 100);
 	canvasContext.fillText(player2Score, canvas.width-100, 100);
+	
+	if(!gameStart){
+		canvasContext.fillStyle = 'white';
+		canvasContext.fillText("Click to start", (canvas.width/2)-25, (canvas.height/2)-65);
+		return;
+	}
 }
 
 function colorCircle(centerX, centerY, radius, drawColor) {
