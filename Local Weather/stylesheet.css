@@ -1,0 +1,37 @@
+#weatherApp {
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#tempText {
+    font-size: 25px;
+}
+
+img {
+    width: 100px;
+}
+a {
+    text-decoration: none !important;
+}
+a:link {
+    color: rgb(60, 110, 124) !important;
+}
+
+
+a:visited {
+    color: rgb(60, 110, 124) !important;
+
+}
+
+a:hover {
+    color: rgb(23, 44, 49) !important;
+}
+
+a:active {
+    color: rgb(23, 44, 49)  !important;
+} 
