@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+body {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+section {
+    display: block;
+    margin: 0 auto;
+    min-height: 150px;
+    margin-top: 8px;
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    bottom: -38px;
+}
+
+blockquote {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
