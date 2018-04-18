@@ -15,11 +15,15 @@
         <header>
             <h1>Wikipedia Viewer</h1>
         </header>
-        <main>
-            <input id="search" placeholder="Search">
-            <a href="https://en.wikipedia.org/wiki/Special:Random"><button class="btn btn-secondary" id="random">Random</button></a>
-            <div id="results"></div>
+        <main id="searchBox">
+            <div id="searchBar" class="col-3">
+                <input id="search" placeholder="Search" autocomplete="off">    
+                <div id="livesearch"></div> 
+            </div> 
+            <a  id="random" href="https://en.wikipedia.org/wiki/Special:Random"><button class="btn btn-secondary">Random</button></a>    
         </main>
+        <section id="results">            
+        </section>
     </div>
 </body>
 </html>
