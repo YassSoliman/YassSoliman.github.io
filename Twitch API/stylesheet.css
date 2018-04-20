@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon');
+
+.container {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+#streamers {
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+
+}
+
+#status {
+    font-style: italic;
+  }
+  
+#user, #status {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    color: rgb(226, 226, 226);
+    padding: 5px 65px 5px 65px !important;
+    position: relative;
+}
+
+footer {
+    background: rgb(82, 82, 82);
+    height: 10px;
+    margin: 0;
+}
+
+h1 {
+    text-align: left;
+    line-height: 1.5 !important;
+}
+
+.container{
+    max-width: 600px !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    font-family: 'Do Hyeon', sans-serif;
+    background: rgb(82, 82, 82);
+}
+
+.menu {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    
+}
+
+.menu p {
+    float: right;
+}
+
+.selector {
+    background: rgb(226, 226, 226);
+    margin: 2px 0px 2px 0px;
+    transition: width 0.4s linear;
+    width: 20px;
+    overflow: hidden;
+    clear: right;
+    height: 20px;
+    line-height: 20px;
+    float: right;    
+}
+
+.row {
+    margin: 2px 0px;
+    line-height: 50px;
+}
+
+.active, .selector:hover{
+    width:67px;
+    transition: width 0.4s linear;
+    cursor: pointer;    
+}
+.circle {
+    margin: 5px 5px 5px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(73, 73, 73);
+    background-color:rgb(173, 173, 173);
+    float: left;
+}
+
+.online, #online .circle {
+    background-color: rgb(110, 201, 156);
+}
+
+.offline, #offline .circle {
+    background-color: rgb(179, 84, 84);
+}
+
+a:hover {
+    color: rgb(75, 75, 75) !important; 
+}
+
+a:link,
+a:visited,
+a,
+a:active {
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+}
