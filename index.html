@@ -46,8 +46,7 @@
 		<section id="portfolio">
 
 		  <h4>Portfolio</h4>
-		  <p>Ut non iaculis neque, vel mattis dui. Ut erat felis, lobortis quis interdum vitae, vehicula id tortor. Pellentesque dui metus, aliquam in mi rhoncus, sollicitudin consectetur dolor. Donec placerat efficitur mattis. Nulla vitae justo gravida, condimentum
-			libero quis, pretium nisi.</p>
+		  <p>Here are a couple of projects I've worked on. I find game development very interesting and fun. If you want to see more of what I have <a href="projects.html" id="projects">click here.</a></p>
 		  <div class="well">
 		  <table class="games">
 			<tr>
@@ -81,13 +80,13 @@
 		<section id="contact">
 
 		  <h4>Contact me</h4>
-		  <form novalidate>
-			<label for="first-name">First Name: </label>
-			<input placeholder="John" type="text" id="first-name" required>
-			<label for="last-name">Last Name: </label>
-			<input placeholder="Doe" type="text" id="last-name" required><br>
+		  <form action="https://formspree.io/soliman.yasser@hotmail.com" method="POST">
+			<label for="full-name">Full Name: </label>
+			<input placeholder="John Doe" type="text" id="full-name" name="name" required>
+			<label for="email">Email: </label>
+			<input placeholder="yourmail@email.com" type="text" id="email" name="_replyto" required><br>
 			<textarea class="form-control" rows="7" id="contact-box" placeholder="1024 characters maximum" maxlength="1024" required></textarea><br>
-			<button type="submit">Submit</button>
+			<button type="submit" value="Send">Submit</button>
 		  </form>
 		</section>
 	  </div>
